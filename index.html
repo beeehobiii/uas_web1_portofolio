@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio UAS Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Portofolio UAS Pemrograman Web</h1>
+    <p>Website Portofolio Pribadi</p>
+    <button id="darkToggle">Dark Mode</button>
+</header>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <a onclick="showPage('dashboard')">Dashboard</a>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('profile')">Profil</a>
+        <a onclick="showPage('project')">Karya & Project</a>
+        <a onclick="showPage('media')">Media</a>
+        <a onclick="showPage('informasi')">Informasi</a>
+        <a onclick="showPage('kontak')">Kontak</a>
+        <a onclick="showPage('pesan')">Pesan Masuk</a>
+    </aside>
+
+    <!-- KONTEN -->
+    <main class="content">
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="page active">
+            <h1>Dashboard</h1>
+            <div class="cards">
+                <div class="card">Proyek<br><b>3</b></div>
+                <div class="card">Klien Puas<br><b>2</b></div>
+                <div class="card">Pengalaman<br><b>5 Bulan</b></div>
+                <div class="card">Kepuasan<br><b>80%</b></div>
+            </div>
+        </section>
+
+        <!-- HOME -->
+        <section id="home" class="page">
+            <h1>Home</h1>
+            <p>Website portofolio ini dibuat untuk memenuhi UAS Pemrograman Web 1.</p>
+        </section>
+
+        <!-- PROFIL -->
+        <section id="profile" class="page">
+            <h1>Profil</h1>
+            <p><b>Nama:</b> Fara Anindya Maharani</p>
+            <p><b>NIM:</b> 251011700652</p>
+            <p><b>Kelas:</b> 01SIFP011</p>
+
+            <h3>Keahlian & Minat</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Desain Website</li>
+            </ul>
+
+            <h3>Pengalaman Kerja</h3>
+            <p>-</p>
+
+            <h3>Pendidikan</h3>
+            <ul>
+                <li>SMA</li>
+                <li>Mahasiswa</li>
+            </ul>
+
+            <h3>Kontak Pribadi</h3>
+            <p>No HP: 082110912410</p>
+            <p>Email: faraanindyamaharani@gmail.com</p>
+            <p>Alamat: Kab.Bogor</p>
+        </section>
+
+        <!-- PROJECT -->
+        <section id="project" class="page">
+            <h1>Karya & Project</h1>
+            <ul>
+                <li>Website Portofolio</li>
+                <li>Website HTML Sederhana</li>
+            </ul>
+        </section>
+
+        <!-- MEDIA -->
+        <section id="media" class="page">
+            <h1>Media</h1>
+
+            <h3>Video</h3>
+            <video controls width="300">
+                <source src="c:\Users\Dea\Videos\video begins.mp4">
+            </video>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="d:\SEMESTER 1\Pemrograman WEB 1 - Pak Ragil Nur Iman\UTS_Pemrograman WEB1_ Fara Anindya Maharani_01SIFP011_251011700652\where we are-one direction.mp3">
+            </audio>
+
+            <h3>Gambar</h3>
+            <img src="c:\Users\Dea\OneDrive\Gambar\araaaaaaaaa.jpeg" width="200">
+
+            <h3>Dokumen</h3>
+            <a href="d:\SEMESTER 1\Pemrograman WEB 1 - Pak Ragil Nur Iman\Tugas\PEMROGRAMAN WEB PERTEMUAN 20.pdf">Buka PDF</a>
+        </section>
+
+        <!-- INFORMASI -->
+        <section id="informasi" class="page">
+            <h1>Informasi</h1>
+
+            <h3>Layanan</h3>
+            <p>Website Basic: Rp500.000</p>
+
+            <h3>Statistik</h3>
+            <p>Proyek: 3 | Klien Puas: 2 | Pengalaman: 5 Bulan | Kepuasan: 80%</p>
+
+            <h3>Timeline</h3>
+            <ul>
+                <li>2025: Belajar HTML, CSS & JavaScript</li>
+            </ul>
+
+            <h3>Pertanyaan Umum</h3>
+            <p>Apa website ini bisa dikembangkan? Bisa.</p>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontak" class="page">
+            <h1>Kontak</h1>
+
+            <h3>Informasi Kontak</h3>
+            <p>Email: faraanindyamaharani@gmail.com</p>
+            <p>Telp: 082110912410</p>
+            <p>Alamat: Kab.Bogor</p>
+            <p>Jam Kerja: 08.00 - 17.00</p>
+
+            <h3>Kirim Pesan</h3>
+            <form id="formPesan">
+                <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="subjek" placeholder="Subjek" required>
+                <textarea id="pesanText" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+
+            <h3>Media Sosial</h3>
+            <p><a href="https://www.instagram.com/raainxys?igsh=MW45OGhrd2E1aTZxbQ==" target="_blank">instagram</a></p>
+
+            <h3>Maps</h3>
+            <iframe src="https://www.google.com/maps?q=Bogor&output=embed"
+                width="300" height="200"></iframe>
+        </section>
+
+         <!-- PESAN MASUK -->
+        <section id="pesan" class="page">
+            <h1>Pesan Masuk</h1>
+            <div id="pesanMasuk"></div>
+        </section>
+
+    </main>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>

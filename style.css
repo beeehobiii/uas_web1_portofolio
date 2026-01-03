@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+}
+
+/* DARK MODE */
+.dark body {
+    background: #111827;
+}
+
+.dark section {
+    background: #1f2937;
+    color: white;
+}
+
+.dark .sidebar {
+    background: #020617;
+}
+
+.dark .header {
+    background: #020617;
+}
+
+/* HEADER */
+.header {
+    background: #2563eb;
+    color: white;
+    padding: 20px;
+}
+
+#darkToggle {
+    margin-top: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #1f3c88;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #162f6a;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #2196f3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    background: #1f3c88;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#pesanMasuk div {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1f3c88;
+    font-family: Arial, sans-serif, black;
+}
